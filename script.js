@@ -28,13 +28,13 @@ async function getAllSongs(folder){
     curFolder = folder;
   
     
-    // let a = await fetch("http://127.0.0.1:5500/Songs/") // Fetching Songs
+    // let a = await fetch("https://swajeet9597.github.io/Spotify_Clone/Songs/") // Fetching Songs
 
 
-    // let a = await fetch("http://127.0.0.1:5500/Songs/Animal") // Fetching Songs
+    // let a = await fetch("https://swajeet9597.github.io/Spotify_Clone/Songs/Animal") // Fetching Songs
 
 
-    let a = await fetch(`http://127.0.0.1:5500/Songs/${folder}`) // Fetching Songs
+    let a = await fetch(`https://swajeet9597.github.io/Spotify_Clone/Songs/${folder}`) // Fetching Songs
 
 
 
@@ -100,7 +100,7 @@ const vol =(tar)=>{
 
 
 async function getAllAlbums(){
-    let f = await fetch("http://127.0.0.1:5500/Songs/")
+    let f = await fetch("https://swajeet9597.github.io/Spotify_Clone/Songs/")
 
     let r = await f.text()
 
@@ -122,7 +122,7 @@ async function getAllAlbums(){
 
     for (const al of albums) {
 
-        let f = await fetch(`http://127.0.0.1:5500/Songs/${al}/info.json`)
+        let f = await fetch(`https://swajeet9597.github.io/Spotify_Clone/Songs/${al}/info.json`)
 
         let r = await f.json()
             
@@ -410,12 +410,12 @@ async function main(){
 
     volumeimg.addEventListener("click" , ()=>{
         
-        if(volumeimg.src == "http://127.0.0.1:5500/volume.svg"){
+        if(volumeimg.src == "https://swajeet9597.github.io/Spotify_Clone/volume.svg"){
             
             volumeimg.src = "mute.svg"
             currentsong.volume = 0
         }
-        else if(volumeimg.src == "http://127.0.0.1:5500/mute.svg"){
+        else if(volumeimg.src == "https://swajeet9597.github.io/Spotify_Clone/mute.svg"){
 
             volumeimg.src =  "volume.svg"
 
