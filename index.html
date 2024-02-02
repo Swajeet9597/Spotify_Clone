@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <div class="body">
+
+      <div class="container">
+        <!-- # side body -->
+      <div class="side">
+        <div class="close">
+          <img class="invert" src="/close.svg" alt="" />
+        </div>
+
+        <div class="home">
+          <img class="invert mar logo" src="/logo.svg" alt="" />
+
+          <ul>
+            <li class="h">
+              <img class="invert mar im" src="/home.svg" alt="" />Home
+            </li>
+            <li>
+              <img class="invert mar im" src="/search.svg" alt="" />Search
+            </li>
+          </ul>
+        </div>
+
+        <div class="library">
+          <div class="youlib">
+            <img class="in im libsvg" src="/lab.svg" alt="" />
+            <div class="text1"><span> Your Library</span></div>
+            <img class="invert plusesvg" src="/pluse.svg" alt="" />
+          </div>
+
+          <!-- <div class="createplaylist">
+                <div class="text2">
+                    <span>Create your first playlist</span>
+                    <span class="tt">It's easy, we'll help you</span>
+                    
+                </div>
+          
+                <button class="btn_create_playlist">Create playlist</button>
+            </div>
+
+            <div class="brows">
+                <div class="text2">
+                    <span>Let's find some podcasts to follow</span>
+                    <span class="tt">We'll keep you updated on new episodes</span>
+                    
+                </div>
+          
+                <button class="btn_brows_podcasts">Brows podcasts</button>
+            </div> -->
+
+          <div class="songslib">
+            <!-- <div class="songcard">
+                    <div class="songlg">
+                        <img class="musicimg" src="/music.png" alt="">
+                    </div>
+
+                    <div class="songinfo">
+
+                        <p class="songname">Song Name</p>
+                        <p>Artist name</p>
+
+                    </div>
+                    <div class="playmusicicon">
+
+                        <span>Play now</span>
+                        <button><img src="/pause.svg" alt="" class="invert playiconimgg"></button>
+
+                    </div>
+
+                </div> -->
+          </div>
+
+          <div class="footer">
+            <p>Legal</p>
+            <p>Privacy</p>
+            <p>Policy</p>
+            <p>About ads</p>
+            <p>Cookies</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- # Main body -->
+      <div class="main">
+        <header>
+          <div>
+            <img class="invert menu" src="/menu.svg" alt="" />
+          </div>
+          <div class="arrow">
+            <button class="arrowbtn back">
+              <img class="invert arrowsvg backsvg" src="/back.svg" alt="" />
+            </button>
+            <button class="arrowbtn forword">
+              <img
+                class="invert arrowsvg forwordsvg" 
+                src="/forword.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="singup">
+            <button class="btnsignup">Sign up</button>
+            <button class="btnlogin">Log in</button>
+          </div>
+        </header>
+
+        <div class="spotify_playlist">
+          <div class="heading">
+            <p>Spotify Playlists</p>
+          </div>
+          <div class="cards">
+            <!-- <div data-folder="Animal" class="card_temp">
+              <img class="cardimg" src="/Songs/Animal/image.jpg" alt="" />
+              <button class="btnplay">
+                <img class="playimg" src="/play.svg" alt="" />
+              </button>
+              <p class="cardhead">ANIMAL</p>
+              <p class="cardp">
+                2023 . Manan Bhardwaj, Vishal Mishra, Jaani.
+              </p>
+            </div>
+
+            <div  data-folder="Ashique2" class="card_temp">
+              <img class="cardimg" src="/Songs/Ashique2/image.jpg" alt="" />
+              <button class="btnplay">
+                <img class="playimg" src="/play.svg" alt="" />
+              </button>
+              <p class="cardhead">Aashiqui 2</p>
+              <p class="cardp">Arijit Singh, Ankit Tiwari, Mithoon, Kiran Kamath</p>
+            </div> -->
+
+            
+        
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="playbar">
+      <div class="info">
+        <!-- <img class="invert lggo" src="/music.png" alt="">
+        <span>szcaszcscsa&nbsp</span>
+        <span>csdzvdvsddvs</span> -->
+      </div>
+      <div class="playbtn">
+        <div class="play_pause_btn">
+          <div class="startt">00:00</div>
+          <button class="btn_p_n">
+            <img
+              id="prev"
+              class="invert img_play_pause btn_p"
+              src="/previous.svg"
+              alt=""
+            />
+          </button>
+          <button id="play" class="btn_play_pause">
+            <img id="plays" class="img_play_pause" src="/pause.svg" alt="" />
+          </button>
+          <button class="btn_p_n">
+            <img
+              id="next"
+              class="invert img_play_pause btn_n"
+              src="/next.svg"
+              alt=""
+            />
+          </button>
+          <div class="tttt">00:00</div>
+        </div>
+        <div class="seek">
+          <div class="line">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="vol">
+        <img id="volumeimg" class="invert volume" src="/volume.svg" alt="">
+
+        <div class="range">
+
+            <input id="rrr" class="Range" type="range">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+        </div>

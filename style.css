@@ -1,0 +1,1276 @@
+@font-face {
+  font-family: "spotify";
+  src: url(/CircularSpotifyText-Medium.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  /* background-color: black; */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body{
+background-color: #080707;
+width: 100vw;
+height: 100vh;
+}
+
+.container {
+  display: flex;
+  position: relative;
+}
+
+.side {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 22vw;
+  height: 87vh;
+  /* background-color: azure   ; */
+
+  margin: 0.8rem 0.2rem 1rem 0.7rem;
+}
+
+.close{
+  width: 3.2rem;
+  height: 3.2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1%;
+  display: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 100%;
+  color: #a3a0a0;
+  font-family: "spotify";
+  font-weight: bolder;
+  border-radius: 1rem;
+  background-color: #121212;
+  height: 22%;
+}
+
+.library {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* align-items: center; */
+  width: 100%;
+  color: #a3a0a0;
+  font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN,
+    Meiryo, MS Gothic;
+  font-weight: bolder;
+  border-radius: 1rem;
+  background-color: #121212;
+  height: 78%;
+}
+
+.main {
+  width: 78vw;
+  /* background-color: #121212; */
+  background: linear-gradient(to bottom right, #242424, #080707);
+  margin: 0.8rem 0.7rem 1rem 0.5rem;
+  border-radius: 1rem;
+  height: 87vh;
+}
+
+.invert {
+  filter: invert(1);
+}
+.in {
+  filter: invert(0.5);
+}
+ul {
+  margin-top: 2rem;
+}
+
+.logo {
+  margin-top: 2rem;
+  width: 8rem;
+  height: 2.4rem;
+}
+
+ul li {
+  display: flex;
+  width: 10rem;
+  height: 2.5rem;
+  margin-left: 0.0rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.transp {
+  background-color: transparent;
+  /* border: 1rem solid #242424; */
+}
+
+.mar {
+  margin-right: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.h {
+  color: white;
+}
+
+.youlib {
+  display: flex;
+  margin-top: 1.5rem;
+  /* align-self: center; */
+  align-items: center;
+  position: relative;
+}
+
+.im {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.libsvg {
+  margin-right: 1.0rem;
+  margin-left: 2.5rem;
+}
+
+.text1 {
+  display: flex;
+  align-items: center;
+  /* width: 7%; */
+  /* align-self: center; */
+  height: 2.4rem;
+}
+
+.plusesvg {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-left: 1.0rem;
+  position: absolute;
+  right: 4%;
+}
+
+.createplaylist {
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  margin: 2.5rem 0.7rem;
+  border-radius: 1.0rem;
+}
+
+.text2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.0rem;
+  margin-left: 2.0rem;
+  color: white;
+}
+span {
+  margin-top: 1.0rem;
+}
+.tt {
+  font-size: 1.4rem;
+}
+.btn_create_playlist {
+  width: 12.6rem;
+  height: 3.5rem;
+  text-align: center;
+  margin-top: 2.0rem;
+  margin-left: 2.0rem;
+  border-radius: 2.0rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.brows {
+  display: flex;
+  flex-direction: column;
+  background-color: #242424;
+  margin: 0.0rem 0.7rem 2.5rem 0.7rem;
+  border-radius: 1.0rem;
+}
+.btn_brows_podcasts {
+  width: 14.3rem;
+  height: 3.5rem;
+  text-align: center;
+  margin-top: 2.0rem;
+  margin-left: 2.0rem;
+  border-radius: 2.0rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.songinfo {
+  margin-left: 1.5rem;                
+  line-height: 1.6rem;
+  margin-top: 1.2rem;
+  overflow: hidden;
+  
+}
+
+.songinfo p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* font-size: 1rem; */
+}
+
+.songlg{
+  margin-top: 1.2rem;
+}
+
+.playmusicicon {
+  display: flex;
+  position: absolute;
+  right: 3%;
+  gap: 1.5rem;
+  align-items: center;
+  height: 90%;
+}
+
+.songname {
+  font-size: 1.2rem;
+}
+
+.playiconimgg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.playmusicicon button {
+  background-color: transparent;
+  border: none;
+  /* margin-top: 5rem; */
+  margin-top: 1.4rem;
+}
+.playmusicicon button:hover {
+  cursor: pointer;
+}
+.playmusicicon span {
+  /* margin-top: 2rem; */
+  font-size: 1.2rem;
+}
+
+.footer {
+  display: flex;
+  position: absolute;
+  color: #5c5b5b;
+  font-size: 1.2rem;
+  gap: 0.8rem;
+  bottom: 1.0rem;
+  left: 2.5rem;
+}
+
+.songslib {
+  margin-top: 2.5rem;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.songcard {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid rgb(119, 115, 115);
+  margin: 2.0rem 2.0rem;
+  border-radius: 0.5rem;
+  height: 6.0rem;
+  position: relative;
+  font-size: 1.0rem;
+  cursor: pointer;
+  padding-bottom: 1.0rem;
+}
+.musicimg {
+  width: 2.0rem;
+  height: 2.0rem;
+  filter: invert(1);
+  margin-left: 1.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main div CSS*/
+
+.main {
+}
+
+header {
+  display: flex;
+  /* height: 6.4rem; */
+  height: 8%;
+  align-items: center;
+  border-radius: 1rem;
+  position: relative;
+  color: white;
+  background-color: #121212;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  left: 1%;
+}
+
+.arrowbtn {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: #080707;
+  border: none;
+}
+
+.arrowsvg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.singup {
+  position: absolute;
+  right: 1%;
+  /* width: 10vw; */
+}
+
+.btnsignup {
+  height: 4.0rem;
+  width: 8.0rem;
+  background-color: transparent;
+  border: none;
+  color: #a3a0a0;
+}
+
+.btnsignup:hover {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btnlogin {
+  height: 4.8rem;
+  width: 9.6rem;
+  border-radius: 3.0rem;
+}
+
+.btnlogin:hover {
+  height: 5.0rem;
+  width: 9.8rem;
+  border-radius: 3.0rem;
+  cursor: pointer;
+}
+
+.spotify_playlist {
+  width: 100%;
+  /* background-color: #0a0a0a; */
+  /* background: linear-gradient(to bottom right, #242424, #080707); */
+  padding-top: 1.0rem;
+  height: 90%;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-left: 2.5rem;
+  /* margin-top: 10rem; */
+}
+.heading p {
+  /* margin-top: 10rem; */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  /* gap: 10px; */
+  margin-left: 2.5rem;
+  /* margin-left: 15px; */
+  /* margin-right: 15px; */
+  margin-right: 2.5rem;
+  overflow-y: auto;
+  height: 85%;
+  /* justify-content: center; */
+
+
+
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+  
+}
+
+.card_temp {
+  width: 19.6rem;
+  /* width: 196px; */
+  height: 27.6rem;
+  /* height: 276px; */
+  background-color: #1c1b1b;
+  color: white;
+  margin-top: 1.6rem;
+  /* margin-top: 16px; */
+
+  border-radius: 0.5rem;
+  /* border-radius: 5px; */
+
+ margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_temp p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardimg {
+  width: 16.4rem;
+  /* width: 164px; */
+  height: 16.4rem;
+  /* height: 164px; */
+  margin: 1.6rem 1.6rem;
+  /* margin: 16px 16px; */
+  border-radius: 0.5rem;
+  /* border-radius: 5px; */
+
+  object-fit:cover;
+}
+
+.cardhead {
+  font-size: 1.6rem;
+  /* font-size: 16px; */
+  font-weight: bold;
+  margin-left: 1.6rem;
+  /* margin-left: 16px; */
+  letter-spacing: 0.1rem;
+  /* letter-spacing: 1px; */
+}
+.cardp {
+  font-size: 1.4rem;
+  /* font-size: 14px; */
+  margin-top: 0.5rem;
+  /* margin-top: 5px; */
+  margin-left: 1.6rem;
+  /* margin-left: 16px; */
+  margin-right: 1.6rem;
+  /* margin-right: 16px; */
+  color: #a3a0a0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+  /* margin-bottom: 16px; */
+}
+
+.btnplay {
+  width: 4.8rem;
+  /* width: 48px; */
+  height: 4.8rem;
+  /* height: 48px; */
+  background-color: #1ed760;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  right: 2.2rem;
+  /* right: 22px; */
+  top: 13.5rem;
+  /* top: 135px; */
+  opacity: 0;
+ 
+}
+.card_temp:hover {
+  .btnplay {
+    width: 4.8rem;
+    /* width: 48px; */
+    height: 4.8rem;
+    /* height: 48px; */
+    background-color: #1ed760;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 2.2rem;
+    /* right: 22px; */
+    top: 12.6rem;
+    /* top: 126px; */
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+
+
+
+.card_temp:hover {
+  background-color: #242424;
+}
+.playimg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+/* playbar css */
+
+.playbar {
+  width: 99vw;
+  margin: auto;
+  height: 10vh;
+  /* border: 1rem solid red; */
+  /* display: grid;
+  grid-template-columns: 1fr 2fr 1fr; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+.info {
+  /* border: 1rem solid white; */
+  width: 14%;  
+
+
+}
+
+.info span{
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  /* width: 80%; */
+  align-self: center;  
+}
+
+.playbtn {
+  /* border: 1rem solid white; */
+  display: flex;
+  flex-direction: column;
+  width:70%;
+}
+
+.play_pause_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.0rem;
+  gap: 2.0rem;
+  position: relative;
+}
+
+
+.tttt{
+
+    position: absolute;
+    right: 7%;
+    top: 20%;
+    color: white;
+}
+
+.btn_play_pause {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_p_n {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.btn_p_n:hover {
+  cursor: pointer;
+}
+.btn_play_pause {
+  cursor: pointer;
+}
+
+.vol {
+  /* border: 0.1rem solid white; */
+  display: flex;
+  align-items: center;
+  /* width: 15%; */
+
+}
+
+.volume{
+  width: 2.8rem;
+  height: 2.8rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.Range{
+  width: 15rem;
+  height: 0.3rem;
+  margin-left: 0rem;
+  cursor: pointer;
+}
+
+
+
+
+
+.img_play_pause {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.seek {
+  /* display: flex;
+  justify-content: center;
+  position: relative;
+
+  height: 40%; */
+
+  display: flex;
+  justify-content: center;
+  margin-top: 1.8rem;
+  position: relative;
+}
+
+.line {
+  align-self: center;
+  width: 85%;
+  border: 0.2rem solid rgb(77, 73, 73);
+  height: 0.0rem;
+  border-radius: 1.0rem;
+  position: relative;
+
+}
+
+.circle {
+  position: absolute;
+  height: 1.2rem;
+  left: 0%;
+  top:-0.6rem;
+  width: 1.2rem;
+  background-color: rgb(77, 73, 73);
+  border-radius: 50%;
+  /* top: 31%; */
+ 
+}
+
+.line:hover {
+  cursor: pointer;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+/* ::-webkit-scrollbar {
+    width: 5rem;
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #222;
+
+  }  */
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.0rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(102, 100, 100);
+}
+
+/* scrollbar-color: #333 #222; */
+/* For Firefox */
+/* Note: As of my last knowledge update in January 2022, Firefox supports scrollbar-color, but it's always a good idea to check for updates. */
+/* scrollbar-color: #333 #222; */
+
+/* For Microsoft Edge */
+/* Note: Edge supports scrollbar-color, but it may require the -ms- prefix. */
+/* Hide the default scrollbar in Edge */
+/* -ms-overflow-style: none;  */
+/* scrollbar-color: #333 #222; */
+.lggo{
+    width: 3.2rem;
+  height: 3.2rem;
+  margin: 2.0rem;
+  background-color: transparent;
+}
+
+.gif{
+
+        width: 10.0rem;
+      height: 9.0rem;
+      margin: 0.0rem 2.0rem;
+      /* border: 1rem solid greenyellow; */
+
+
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 15%;
+    overflow: hidden;
+    text-overflow: ellipsis    ;
+}
+.info span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-self: center;
+  font-size: 2rem;
+}
+
+
+.menu{
+  width: 3.2rem;
+  height: 3.2rem;
+  margin-left: 1.0rem;
+  display: none;
+ 
+}
+
+
+.startt{
+  color: white;
+  left: 7%;
+  top: 20%;
+  position: absolute;
+}
+
+@media (max-width: 1600px){
+
+  html{
+    font-size: 60%;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 87vh;
+    left: -100%;
+    position: absolute;  
+    margin: 0.8rem 0.2rem 1.0rem 0.7rem;
+    z-index: 1;
+    background-color: #080707;
+    transition: all 0.5s;
+    /* padding: 10rem; */
+  }
+  .main {
+    width: 100vw;
+    background-color: #121212;
+    margin: 0.8rem 0.7rem 1.0rem 0.5rem;
+    border-radius: 1.0rem;
+    height: 87vh;
+  }
+  .arrow {
+    position: absolute;
+    left: 5.0rem;
+  }
+  .menu{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 1.0rem;
+    display: block;
+    cursor: pointer;
+   
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 95%;
+    margin: auto;
+    color: #a3a0a0;
+    font-family: "spotify";
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 22%;
+  }
+  
+  .library {
+    margin-top: 0.8rem;
+    margin-left: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    width: 95%;
+    
+    color: #a3a0a0;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN,
+      Meiryo, MS Gothic;
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 78%;
+  }
+
+  .close{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1%;
+    display: block;
+    cursor: pointer;
+    
+  }
+
+
+}
+
+
+@media (max-width: 950px){
+
+  html{
+    font-size: 57%;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 87vh;
+    left: -100%;
+    position: absolute;  
+    margin: 0.8rem 0.2rem 1.0rem 0.7rem;
+    z-index: 1;
+    background-color: #080707;
+    /* padding: 10rem; */
+  }
+  .main {
+    width: 100vw;
+    background-color: #121212;
+    margin: 0.8rem 0.7rem 1.0rem 0.5rem;
+    border-radius: 1.0rem;
+    height: 87vh;
+  }
+  .arrow {
+    position: absolute;
+    left: 5.0rem;
+  }
+  .menu{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 1.0rem;
+    display: block;
+    cursor: pointer;
+   
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 95%;
+    margin: auto;
+    color: #a3a0a0;
+    font-family: "spotify";
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 22%;
+  }
+  
+  .library {
+    margin-top: 0.8rem;
+    margin-left: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    width: 95%;
+    
+    color: #a3a0a0;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN,
+      Meiryo, MS Gothic;
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 78%;
+  }
+
+  .close{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1%;
+    display: block;
+    cursor: pointer;
+ 
+  }
+
+
+}
+
+@media (max-width: 800px){
+
+  html{
+    font-size: 50%;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 87vh;
+    left: -100%;
+    position: absolute;  
+    margin: 0.8rem 0.2rem 1.0rem 0.7rem;
+    z-index: 1;
+    background-color: #080707;
+    /* padding: 10rem; */
+  }
+  .main {
+    width: 100vw;
+    background-color: #121212;
+    margin: 0.8rem 0.7rem 1.0rem 0.5rem;
+    border-radius: 1.0rem;
+    height: 87vh;
+  }
+  .arrow {
+    position: absolute;
+    left: 5.0rem;
+  }
+  .menu{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 1.0rem;
+    display: block;
+    cursor: pointer;
+   
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 95%;
+    margin: auto;
+    color: #a3a0a0;
+    font-family: "spotify";
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 22%;
+  }
+  
+  .library {
+    margin-top: 0.8rem;
+    margin-left: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    width: 95%;
+    
+    color: #a3a0a0;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN,
+      Meiryo, MS Gothic;
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 78%;
+  }
+
+  .close{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1%;
+    display: block;
+    cursor: pointer;
+ 
+  }
+
+  
+
+
+}
+
+@media (max-width: 600px){
+
+  html{
+    font-size: 45%;
+  }
+  .side {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 87vh;
+    left: -100%;
+    position: absolute;  
+    margin: 0.8rem 0.2rem 1.0rem 0.7rem;
+    z-index: 1;
+    background-color: #080707;
+    /* padding: 10rem; */
+  }
+  .main {
+    width: 100vw;
+    background-color: #121212;
+    margin: 0.8rem 0.7rem 1.0rem 0.5rem;
+    border-radius: 1.0rem;
+    height: 80vh;
+  }
+  .arrow {
+    position: absolute;
+    left: 5.0rem;
+  }
+  .menu{
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: 1.0rem;
+    display: block;
+    cursor: pointer;
+   
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 95%;
+    margin: auto;
+    color: #a3a0a0;
+    font-family: "spotify";
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 22%;
+  }
+  
+  .library {
+    margin-top: 0.8rem;
+    margin-left: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* align-items: center; */
+    width: 95%;
+    
+    color: #a3a0a0;
+    font-family: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN,
+      Meiryo, MS Gothic;
+    font-weight: bolder;
+    border-radius: 1.0rem;
+    background-color: #121212;
+    height: 78%;
+  }
+
+  .close{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1%;
+    display: block;
+    cursor: pointer;
+ 
+  }
+
+  .playbar {
+    /* width: 98.5vw;
+    height:  18vh;
+    display: flex; */
+ 
+    /* justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #362f2f;
+    font-size: 1.7rem; */
+
+
+    width: 98.5vw;
+    border-radius: 1rem;
+    /* margin: auto; */
+    /* margin: -1.2rem 0.7rem 1rem 0.5rem; */
+    height: 18vh;
+    /* border: 1rem solid red; */
+    row-gap: -2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-color: #362f2f;
+    font-size: 1.7rem;
+    bottom: 0.6%;
+    right: 0.8%;
+    position: fixed;
+  }
+
+  .info{
+    /* width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start; */
+    /* height: 20%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    height: 4.5rem;
+  }
+
+    .playbtn {
+      /* border: 1rem solid white; */
+      /* display: flex;
+      flex-direction: column;
+      width:65%;
+      height: 38%;
+      align-self: flex-start; */
+
+      display: flex;
+      flex-direction: column;
+      width: 90vw;
+      /* height: 38%; */
+      
+      margin: 0px auto;
+
+
+      top: 30%;
+      left: 4%;
+      position: absolute;
+    }
+
+    .vol {
+      /* border: 0.1rem solid white; */
+      /* display: flex;
+      align-items: center;
+      margin-top: 0.9rem;
+      align-self: flex-start; */
+      /* width: 15%; */
+/* 
+      display: flex; */
+      /* align-items: center; */
+      /* margin: 0px auto; */
+      /* margin-top: 0.9rem; */
+      /* align-self: flex-start; */
+/* 
+      position: absolute;
+      margin: 0px auto; */
+      /* margin-top: 0.9rem; */
+      /* align-self: start; */
+      /* bottom: 12%;
+      left: 35%; */
+
+
+
+          /* border: 0.1rem solid white; */
+    /* width: 15%; */
+    display: flex;
+    /* align-items: center; */
+    /* margin: 0px auto; */
+    /* margin-top: 0.9rem; */
+    /* align-self: flex-start; */
+    /* position: absolute; */
+    margin: 0px auto;
+    /* margin-top: 0.9rem; */
+    /* align-self: start; */
+    margin: -10px auto;
+    
+    }
+
+    .Range{
+      width: 9rem;
+    }
+
+    .lggo{
+      width: 12px;
+      height: 12px;
+    }
+
+  
+      
+   
+
+    .btnsignup {
+      height: 3.0rem;
+      width: 6.0rem;
+      background-color: transparent;
+      border: none;
+      color: #a3a0a0;
+      font-size: 1.7rem;
+      margin-right: 1rem;
+    }
+    
+    .btnsignup:hover {
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      font-size: 1.7rem;
+      
+    }
+    
+    .btnlogin {
+      height: 4rem;
+      width: 9rem;
+      border-radius: 3.0rem;
+      font-size: 1.7rem;
+    }
+    
+    .btnlogin:hover {
+      height: 4rem;
+      width: 9rem;
+      border-radius: 3.0rem;
+      font-size: 1.7rem;
+
+      cursor: pointer;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      /* gap: 10px; */
+      margin-left: 2.5rem;
+      /* margin-left: 15px; */
+      /* margin-right: 15px; */
+      margin-right: 2.5rem;
+      overflow-y: auto;
+      height: 85%;
+      justify-content: center;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    
+      
+    }
+  
+
+
+
+} 
+
+
