@@ -28,13 +28,13 @@ async function getAllSongs(folder){
     curFolder = folder;
   
     
-    // let a = await fetch("https://spotifyclonesd.freewebhostmost.com/Songs/") // Fetching Songs
+    // let a = await fetch("http://127.0.0.1:5500/Songs/") // Fetching Songs
 
 
-    // let a = await fetch("https://spotifyclonesd.freewebhostmost.com/Songs/Animal") // Fetching Songs
+    // let a = await fetch("http://127.0.0.1:5500/Songs/Animal") // Fetching Songs
 
 
-    let a = await fetch(`https://spotifyclonesd.freewebhostmost.com/Songs/${folder}`) // Fetching Songs
+    let a = await fetch(`http://127.0.0.1:5500/Songs/${folder}`) // Fetching Songs
 
 
 
@@ -100,7 +100,7 @@ const vol =(tar)=>{
 
 
 async function getAllAlbums(){
-    let f = await fetch("https://spotifyclonesd.freewebhostmost.com/Songs/")
+    let f = await fetch("http://127.0.0.1:5500/Songs/")
 
     let r = await f.text()
 
@@ -122,7 +122,7 @@ async function getAllAlbums(){
 
     for (const al of albums) {
 
-        let f = await fetch(`https://spotifyclonesd.freewebhostmost.com/Songs/${al}/info.json`)
+        let f = await fetch(`http://127.0.0.1:5500/Songs/${al}/info.json`)
 
         let r = await f.json()
             
